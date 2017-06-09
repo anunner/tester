@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>JS Fundamentals</title>
+  </head>
+  <body>
+    <h1>js fundamentals</h1>
+    <script type="text/javascript">
+    var myarr = [1,5,25, 125,42];
+    for (var index in myarr){
+    console.log(myarr[index]*5);
+    }
+
+    x = [3,5,"Dojo", "rocks", "Michael", "Sensei"];
+    x.push(100);
+    x.push(['hello', 'world', 'javascript is funt'])
+    for (var idx =0; idx<x.length; idx++){
+
+      console.log(x[idx])
+    }
+    sum=0;
+    for(var x = 2; x < 500; x++){
+      sum+=x;
+    }
+    console.log(sum)
+
+    var object={
+      name: 'alan',
+      distance_traveled: 0,
+      say_name: function(){
+        alert(object.name)
+      }
+    }
+    object.say_name()
+
+
+    </script>
+
+
+  </body>
+</html>

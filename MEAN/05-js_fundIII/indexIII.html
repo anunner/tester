@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>js fund III</title>
+    <script type="text/javascript">
+    function personConstructor(name){
+      var newPerson = {
+        name:name,
+        distance_traveled:0,
+        say_name: function(){
+          alert('hey ' + newPerson.name + ' kiss my furry butt');
+        },
+        say_something: function(p1){
+          console.log('jay says '+ p1 )
+        },
+        walk: function(){
+          newPerson.distance_traveled+=3;
+          alert('Jimblo is walking '+ newPerson.distance_traveled + ' miles')
+        },
+        run: function(){
+          newPerson.distance_traveled+=10;
+          alert('Jimblo is running ' + newPerson.distance_traveled + ' miles')
+        },
+        crawl: function(){
+          newPerson.distance_traveled+=1;
+          alert('Jimblo is crawling ' + newPerson.distance_traveled + ' miles')
+        }
+      }
+      console.log(newPerson)
+      return newPerson
+    }
+    var result=personConstructor('ferd')
+    result.say_name()
+    result.say_something("'oh, i guess i was missing this'")
+    result.walk()
+    result.run()
+    result.crawl()
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

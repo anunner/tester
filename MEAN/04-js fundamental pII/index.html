@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>JS Fundamentals</title>
+
+
+
+    <script type = "text/javascript">
+      document.addEventListener("DOMContentLoaded", function(e){
+        console.log(e);
+        var element = document.getElementById('input');
+        var buttonElement = document.getElementById('button');
+        console.dir(button);
+        var list = document.getElementById("list")
+        buttonElement.onclick=function(e){
+          console.log("we are clicking");
+          console.dir(list);
+          var inputVal = element.value;
+          //list.innerHTML += "<li>"+ inputVal + "</li>";
+          list.innerHTML += `<li>${inputVal}</li>`;
+          element.value="";
+
+        }
+        })
+
+        var object={
+          name: 'alan',
+          distance_traveled: 0,
+          say_name: function(){
+            alert(object.name + " just did say_name")
+          },
+          say_something: function(p1){
+            console.log(object.name, 'says', p1)
+        },
+
+        walk: function(){
+          object.distance_traveled+=3;
+          alert(object.name +' is walking ' + object.distance_traveled + ' miles')
+        },
+        run: function(){
+          object.distance_traveled+=10;
+        alert(object.name +' is running ' + object.distance_traveled + ' miles')
+        },
+        crawl: function(){
+          object.distance_traveled+=1;
+          alert(object.name + ' is crawling ' + object.distance_traveled + ' miles')
+        },
+        }
+      object.say_name();
+      object.say_something('i am cool');
+      object.walk();
+      object.run();
+      object.crawl();
+    </script>
+  </head>
+  <body>
+    <h1>js fundamentals</h1>
+    <input id="input" type="text" name="item">
+    <button id="button" type="submit" name="button">Add Item</button>
+    <ul id="list">
+
+
+    </ul>
+
+
+  </body>
+</html>

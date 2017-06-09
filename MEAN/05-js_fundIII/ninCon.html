@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <script type="text/javascript">
+    function ninjaConstructor(name, cohort, belt){
+      var newNinja = {
+        name: name,
+        cohort: cohort,
+        belt: belt,
+
+      levelUp: function(){
+        if(newNinja.belt=='yellow'){
+          newNinja.belt='red'}
+
+
+        else if(newNinja.belt=='red'){
+            newNinja.belt= 'brown'}
+
+        else if(newNinja.belt=='brown'){
+          newNinja.belt='black'};
+        },
+
+
+
+      }
+
+      console.log(newNinja)
+      return newNinja
+    }
+    var result=ninjaConstructor('ferd', 'seattle', 'brown')
+    result.levelUp()
+
+    console.log(result.name, result.cohort, result.belt)
+
+    </script>
+    <title>ninja constructor</title>
+  </head>
+  <body>
+    ninja constructor
+      </body>
+</html>
